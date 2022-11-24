@@ -277,15 +277,15 @@ fn oxocarbon() -> oxi::Result<()> {
     //         .underline(true)
     //         .build(),
     // )?;
-    api::set_hl(
-        0,
-        "StatusCommand",
-        &SetHighlightOpts::builder()
-            .foreground("#a2a9b0")
-            .background(oxocarbon[0])
-            .underline(true)
-            .build(),
-    )?;
+    // api::set_hl(
+    //     0,
+    //     "StatusCommand",
+    //     &SetHighlightOpts::builder()
+    //         .foreground("#a2a9b0")
+    //         .background(oxocarbon[0])
+    //         .underline(true)
+    //         .build(),
+    // )?;
 
     // telescope
     highlight!(TelescopeBorder, 16, 16);
