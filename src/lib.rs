@@ -260,23 +260,23 @@ fn oxocarbon() -> oxi::Result<()> {
     //         .background(oxocarbon[0])
     //         .build(),
     // )?;
-    api::set_hl(
-        0,
-        "StatusPosition",
-        &SetHighlightOpts::builder()
-            .foreground("#a2a9b0")
-            .background(oxocarbon[0])
-            .build(),
-    )?;
-    api::set_hl(
-        0,
-        "StatusNormal",
-        &SetHighlightOpts::builder()
-            .foreground("#a2a9b0")
-            .background(oxocarbon[0])
-            .underline(true)
-            .build(),
-    )?;
+    // api::set_hl(
+    //     0,
+    //     "StatusPosition",
+    //     &SetHighlightOpts::builder()
+    //         .foreground("#a2a9b0")
+    //         .background(oxocarbon[0])
+    //         .build(),
+    // )?;
+    // api::set_hl(
+    //     0,
+    //     "StatusNormal",
+    //     &SetHighlightOpts::builder()
+    //         .foreground("#a2a9b0")
+    //         .background(oxocarbon[0])
+    //         .underline(true)
+    //         .build(),
+    // )?;
     api::set_hl(
         0,
         "StatusCommand",
