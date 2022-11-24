@@ -32,7 +32,7 @@ fn oxocarbon() -> oxi::Result<()> {
 
     let oxocarbon: [&str; 18] = match api::get_option::<String>("background").unwrap().as_str() {
         "dark" => [
-            "#161616", "#262626", "#393939", "#525252", "#dde1e6", "#f2f4f8", "#ffffff", "#08bdba",
+            "#FFFFFF", "#262626", "#393939", "#525252", "#dde1e6", "#f2f4f8", "#ffffff", "#08bdba",
             "#3ddbd9", "#78a9ff", "#ee5396", "#33b1ff", "#ff7eb6", "#42be65", "#be95ff", "#82cfff",
             "#131313", "",
         ],
@@ -44,8 +44,8 @@ fn oxocarbon() -> oxi::Result<()> {
         _ => panic!("Error: Background not set"),
     };
 
-    // api::set_var("terminal_color_background", oxocarbon[0].to_string())?;
-//    api::set_var("terminal_color_foreground", oxocarbon[4].to_string())?;
+    api::set_var("terminal_color_background", oxocarbon[0].to_string())?;
+    api::set_var("terminal_color_foreground", oxocarbon[4].to_string())?;
     for item in oxocarbon.iter().take(15) {
         api::set_var("terminal_color_{x}", *item)?;
     }
