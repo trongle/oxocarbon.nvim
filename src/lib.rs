@@ -46,7 +46,8 @@ fn oxocarbon() -> oxi::Result<()> {
 
     // api::set_var("terminal_color_background", oxocarbon[0].to_string())?;
     api::set_var("terminal_color_background", "#FFFFFF")?;
-   api::set_var("terminal_color_foreground", oxocarbon[4].to_string())?;
+   // api::set_var("terminal_color_foreground", oxocarbon[4].to_string())?;
+   api::set_var("terminal_color_foreground", "#FFFFFF")?;
     for item in oxocarbon.iter().take(15) {
         api::set_var("terminal_color_{x}", *item)?;
     }
